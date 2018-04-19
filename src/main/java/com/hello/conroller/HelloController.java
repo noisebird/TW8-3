@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-
+//入口
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public ResponseEntity<String> string() {
         return new ResponseEntity<String>("hello", HttpStatus.OK);
