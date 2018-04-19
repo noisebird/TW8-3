@@ -13,15 +13,9 @@ pipeline {
             }
         }
         stage('Test') {
-            steps {
-                echo 'Testing..'
-
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying..'
-            }
-        }
+             steps {
+                    sh 'gradle test --info'
+             }
+         }
     }
 }
